@@ -1,0 +1,1 @@
+$data remove storage clean_rtp:whitelist Dims[$(Remove)]
