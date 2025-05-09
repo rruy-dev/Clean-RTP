@@ -1,0 +1,1 @@
+tellraw @s [{"text":"Whitelisted Dimensions:\n","color":"yellow"},{"nbt":"Dims[]","storage":"clean_rtp:whitelist","color":"gold"}]
