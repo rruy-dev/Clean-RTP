@@ -8,9 +8,9 @@ scoreboard objectives add rtp_tag dummy
 scoreboard objectives add rtp_op dummy
 scoreboard players set #rtp_rruy rtp_cooldown_minutes 60
 scoreboard players set #rtp_rruy rtp_cooldown_seconds 20
-scoreboard players set #rtp_rruy rtp_cooldown 100
 scoreboard players set #rtp_rruy rtp_tag 0
-execute unless data storage clean_rtp:rtp range run data modify storage clean_rtp:rtp range set value {range:10000}
 execute unless data storage clean_rtp:rtp cooldown run data modify storage clean_rtp:rtp cooldown set value {cooldown:6000}
+execute unless data storage clean_rtp:rtp range.range run data modify storage clean_rtp:rtp range merge value {range:10000}
+execute unless data storage clean_rtp:rtp range.nether_ymax run data modify storage clean_rtp:rtp range merge value {nether_ymax:126}
 execute unless data storage clean_rtp:whitelist Dims run data modify storage clean_rtp:whitelist Dims set value ["minecraft:overworld","minecraft:the_nether","minecraft:the_end"]
 execute unless data storage clean_rtp:whitelist active run data modify storage clean_rtp:whitelist active set value "On"
