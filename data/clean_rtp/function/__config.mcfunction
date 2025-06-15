@@ -84,6 +84,20 @@ tellraw @a ["", \
     "click_event":{ \
       "action":"suggest_command", \
       "command":"/function clean_rtp:_rtp_range {range:10000}"}}, \
+  {"text":"> Set Nether Max Y Position\n","color":"yellow", \
+    "hover_event":{ \
+      "action":"show_text", \
+      "value":[ \
+        {"text":"Manually set Max Y Position in the Nether\n"}, \
+        {"text":"Change 126 to a different number\n\n"}, \
+        {"text":"If nether changing mods are installed.. "}, \
+        {"text":"Check Ypos of nether roof and set to 2 blocks lower than roof\n"}, \
+        {"text":"Default: 126\n"}, \
+        {"text":"Current: ", \
+          "extra":[{"nbt":"range.nether_ymax","storage":"clean_rtp:rtp","color":"gold"}]}]}, \
+    "click_event":{ \
+      "action":"suggest_command", \
+      "command":"/function clean_rtp:_nether_ymax {nether_ymax:126}"}}, \
   {"text":"> Set RTP Cooldown\n","color":"yellow", \
     "hover_event":{ \
       "action":"show_text", \
