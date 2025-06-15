@@ -3,7 +3,6 @@ scoreboard objectives add rtp_cooldown dummy
 scoreboard objectives add rtp_cooldown_m dummy
 scoreboard objectives add rtp_cooldown_s dummy
 scoreboard objectives add rtp_whitelist dummy
-scoreboard objectives add rtp_whitelist_i dummy
 scoreboard objectives add rtp_tag dummy
 scoreboard objectives add rtp_op dummy
 scoreboard players set #rtp_rruy rtp_cooldown_m 60
