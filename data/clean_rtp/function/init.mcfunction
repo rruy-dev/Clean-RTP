@@ -14,3 +14,4 @@ execute unless data storage clean_rtp:rtp range.range run data modify storage cl
 execute unless data storage clean_rtp:rtp range.nether_ymax run data modify storage clean_rtp:rtp range merge value {nether_ymax:126}
 execute unless data storage clean_rtp:whitelist Dims run data modify storage clean_rtp:whitelist Dims set value ["minecraft:overworld","minecraft:the_nether","minecraft:the_end"]
 execute unless data storage clean_rtp:whitelist active run data modify storage clean_rtp:whitelist active set value "On"
+execute store success storage clean_rtp:rtp "mc1.21.5" int 1 run function clean_rtp:checkversion

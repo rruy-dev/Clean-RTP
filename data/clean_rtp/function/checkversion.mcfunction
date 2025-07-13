@@ -1,0 +1,1 @@
+return run test run minecraft:always_pass
