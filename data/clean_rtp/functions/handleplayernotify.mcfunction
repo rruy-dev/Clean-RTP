@@ -1,0 +1,6 @@
+execute at @s run particle minecraft:nautilus ~ ~1.25 ~ 0 0 0 0.5 1
+execute at @s as @e[type=minecraft:armor_stand,scores={rtp_cooldown=80},tag=preloader] if score @s rtp_tag = @p[scores={rtp_tag=0..}] rtp_tag run tellraw @p[scores={rtp_tag=0..}] {"text":"4...","color":"green"}
+execute at @s as @e[type=minecraft:armor_stand,scores={rtp_cooldown=60},tag=preloader] if score @s rtp_tag = @p[scores={rtp_tag=0..}] rtp_tag run tellraw @p[scores={rtp_tag=0..}] {"text":"3...","color":"green"}
+execute at @s as @e[type=minecraft:armor_stand,scores={rtp_cooldown=40},tag=preloader] if score @s rtp_tag = @p[scores={rtp_tag=0..}] rtp_tag run tellraw @p[scores={rtp_tag=0..}] {"text":"2...","color":"green"}
+execute at @s as @e[type=minecraft:armor_stand,scores={rtp_cooldown=20},tag=preloader] if score @s rtp_tag = @p[scores={rtp_tag=0..}] rtp_tag run tellraw @p[scores={rtp_tag=0..}] {"text":"1...","color":"green"}
+execute at @s as @e[type=minecraft:armor_stand,scores={rtp_cooldown=0},tag=preloader] if score @s rtp_tag = @p[scores={rtp_tag=0..}] rtp_tag run execute as @p[scores={rtp_tag=0..}] run function clean_rtp:handleplayerrtp
